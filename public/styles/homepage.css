@@ -178,7 +178,7 @@ nav {
     flex-direction: column;
     padding: 1em;
     width: 100%;
-    max-width: 1800px;
+    max-width: 2000px;
     background-color: var(--color-white);
     position: sticky;
     top: 0;
@@ -247,7 +247,7 @@ nav div {
     padding-bottom: 22em;
     padding-left: 1em;
     padding-top: 5em;
-    max-width: 1800px;
+    max-width: 2000px;
 }
 
 .registered-hero {
@@ -324,7 +324,7 @@ line-height: 75px;
     text-align: center;
     font-size: 1.3rem;
     padding: 3em;
-    max-width: 1800px;
+    max-width: 2000px;
 }
 
 .about-us p {
@@ -373,7 +373,7 @@ line-height: 75px;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    max-width: 1800px;
+    max-width: 2000px;
     background-color: var(--color-accent);
     display: flex;
     flex-direction: column;
@@ -430,7 +430,7 @@ a {
 .footer {
     background-color: var(--color-primary);
     width: 100%;
-    max-width: 1800px;
+    max-width: 2000px;
     padding: 1em;
     text-align: center;
 }
