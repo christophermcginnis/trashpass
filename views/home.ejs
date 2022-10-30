@@ -1,0 +1,66 @@
+<%- include('partials/header') -%>
+    <div class="hero">
+        <div class="heading-container">
+        <h1 class="hero-heading">Taking out the trash..</h1>
+        <h2>is in the <span class="accented-text">past</span>.</h2>
+        <button class="signup-btn-initial">Sign up today.</button>
+        </div>
+    </div>
+    <div class="section-1">
+        <h3>As Easy As 1-2-3</h3>
+        <h1>Doorstep Collection 7 Days A Week.</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor ipsa alias dolore beatae assumenda, recusandae nulla culpa, fugiat non debitis itaque veniam quia laudantium eum pariatur a neque! Nihil, dolorum.
+        Quia asperiores sed sapiente minus repellendus ut, amet aspernatur sit reiciendis blanditiis maxime nisi debitis eligendi, esse qui vitae soluta quos delectus inventore dolorem aut ad fuga. Fugiat, itaque exercitationem?</p>
+        <div id="about-us"></div>
+    </div>
+    
+    <div class="about-us">
+        <h1><span class="accented-text">Worry-Free</span> Waste Collection</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est, omnis! Odit libero deserunt ipsum, consequuntur dolorem tempora suscipit iure a nesciunt quasi, repellendus excepturi! Harum ea incidunt nobis minima quod?
+        Accusamus, voluptate? Ad omnis maxime voluptate ullam aliquid accusamus rerum nulla libero quaerat amet. Illo vero fugiat iste id dicta maxime eaque cumque natus excepturi necessitatibus! Ullam, laboriosam! Natus, voluptatum.</p>
+    </div>
+    <div class="about-us-card-container">
+        <div class="card hide" data-aos="slide-up" ><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae laboriosam error eos quod fuga quis culpa aliquam! Quibusdam nostrum, possimus, corporis blanditiis distinctio, quis reiciendis facilis illo excepturi sit voluptatibus?</p>
+            <img src="/images/clock.svg" alt="">
+        </div>
+        <div class="card hide"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto ducimus hic impedit id inventore eos facilis dolor pariatur voluptas, totam aspernatur repellendus non nobis deserunt reprehenderit. Consequatur itaque pariatur explicabo.</p>
+            <img src="/images/money.svg" alt="">
+        </div>
+        <div class="card hide"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi voluptatibus magnam, repudiandae voluptates fugiat corporis molestias aspernatur nostrum assumenda, iure inventore impedit ipsum eaque nulla quaerat porro hic? Nihil, excepturi!</p>
+            <img src="/images/worker.svg" alt="">
+        </div>
+        <div class="card hide"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis odio vero asperiores sunt delectus eius, fugit, totam suscipit officiis fugiat natus incidunt impedit, molestias ducimus tempora. Asperiores corporis iusto doloremque!</p>
+            <img src="/images/leaf.svg" alt="">
+        </div>
+    </div>
+
+    <div class="section-2">
+        <h1>Boost resident satisfaction with Trashpass.</h1>
+        <button class="signup-btn-initial">Sign up today.</button>
+    </div>
+
+    <div class="popup-signup">
+        <div class="signup-form-container-outer">
+            <div class="exit-btn-container">
+                <img src="/images/exit.svg" alt="">
+            </div>
+            <div class="signup-form-container-inner">
+                <form class="signup-form" action="/register" method="POST">
+                    <div class="validation-feedback"><p class="validation-feedback-error"> </p></div>
+                    <label class="visually-hidden" for="community">Enter your communities name:</label>
+                    <input class="input" type="text" placeholder="Community name" name="community" id="community">
+                    <div class="validation-feedback"><p class="validation-feedback-error"> </p></div>
+                    <label class="visually-hidden" for="name">Enter your full name:</label>
+                    <input class="input" type="text" placeholder="Full name" name="name" id="name">
+                    <div class="validation-feedback"><p class="validation-feedback-error"> </p></div>
+                    <label class="visually-hidden" for="number">Enter your phone number:</label>
+                    <input class="input" type="text" placeholder="Phone number" name="number" id="number">
+                    <div class="validation-feedback"><p class="validation-feedback-error"> </p></div>
+                    <label class="visually-hidden" for="email">Enter your email address:</label>
+                    <input class="input" type="text" placeholder="Email address" name="email" id="email">
+                    <button id="form-submit" type="sumbit">Sign up</button>
+                </form>
+            </div>
+        </div>
+    </div>
+<%- include('partials/footer') -%>
