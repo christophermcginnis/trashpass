@@ -498,6 +498,7 @@ a {
     border: none;
     box-shadow: inset 0px 2px 4px rgba(0,0,0, 0.3);
     -webkit-box-shadow: inset 0px 2px 4px rgba(0,0,0, 0.3);
+    -webkit-border: 1px solid var(--color-light-grey);
 }
 
 .input::placeholder {
