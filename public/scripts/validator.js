@@ -29,7 +29,7 @@ function Validator(input, expression, inputArrayNumber) {
     feedbackError[inputArrayNumber].innerText = '';
   }else {
     feedbackContainer[inputArrayNumber].classList.remove('invisible')
-    feedbackError[inputArrayNumber].innerText = `${input.getAttribute('placeholder')} must be in valid format.`
+    feedbackError[inputArrayNumber].innerText = `${input.dataset.name} must be in valid format.`
     input.classList.add('invalidated');
   }
 }
@@ -52,20 +52,20 @@ number.addEventListener('input', () => {
 fullName.addEventListener('input', () => {
   Validator(fullName, nameRegExp, 1);
   if(RegExp('[0-9]').test(fullName.value) == true){
-    feedbackError[1].innerText = "First name cannot contain numbers."
+    feedbackError[1].innerText = "Name cannot contain numbers."
   }
   if(RegExp('[!@#$%^&*();,`]').test(fullName.value) == true){
-    feedbackError[1].innerText = "First name cannot contain special characters."
+    feedbackError[1].innerText = "Name cannot contain special characters."
   }
 })
 
 communityName.addEventListener('input', () => {
     Validator(communityName, communityNameRegExp, 0);
     if(RegExp('[0-9]').test(communityName.value) == true){
-      feedbackError[0].innerText = "First name cannot contain numbers."
+      feedbackError[0].innerText = "Community name cannot contain numbers."
     }
     if(RegExp('[!@#$%^&*();,`]').test(communityName.value) == true){
-      feedbackError[0].innerText = "First name cannot contain special characters."
+      feedbackError[0].innerText = "Community name cannot contain special characters."
     }
   })
 

@@ -9,19 +9,6 @@
     font-family: Poppins, sans-serif;
 }
 
-.visually-hidden {
-    position: absolute;
-  position: absolute !important;
-  width: 1px !important;
-  height: 1px !important;
-  padding: 0 !important;
-  margin: -1px !important;
-  overflow: hidden !important;
-  clip: rect(0,0,0,0) !important;
-  white-space: nowrap !important;
-  border: 0 !important;
-}
-
 html {
     scroll-behavior: smooth;
 }
@@ -456,9 +443,9 @@ a {
 }
 
 .signup-form-container-outer {
-    width: 95vw;
-    min-height: 600px;
-    max-width: 1000px;
+    width: 90vw;
+    min-height: 700px;
+    max-width: 1200px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -489,6 +476,11 @@ a {
     color: red;
     font-weight: bold;
 }
+label {
+    margin-bottom: 1em;
+    color: black;
+    font-weight: bold;
+}
 
 .input {
     width: 100%;
@@ -498,11 +490,13 @@ a {
     border: none;
     box-shadow: inset 0px 2px 4px rgba(0,0,0, 0.3);
     -webkit-box-shadow: inset 0px 2px 4px rgba(0,0,0, 0.3);
+    border: 1px solid var(--color-light-grey);
     -webkit-border: 1px solid var(--color-light-grey);
+    margin-top: .5em;
 }
 
 .input::placeholder {
-    color: var(--color-black)
+    color: var(--color-light-grey)
 }
 
 #form-submit {
@@ -515,6 +509,7 @@ border: none;
 color: var(--color-white);
 font-weight: 800;
 background-color: var(--color-primary);
+cursor: pointer;
 }
 
 .exit-btn-container {
@@ -611,7 +606,7 @@ background-color: var(--color-primary);
     }
 
     .input {
-        width: 80%;
+        width: 100%;
     }
 
     #form-submit {

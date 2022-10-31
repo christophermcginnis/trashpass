@@ -46,18 +46,23 @@
             </div>
             <div class="signup-form-container-inner">
                 <form class="signup-form" action="/register" method="POST">
+                    
+                    <label for="community">Enter your communities name</label>
+                    <input class="input" type="text" placeholder="Community name" name="community" id="community" data-name="Community name">
                     <div class="validation-feedback"><p class="validation-feedback-error"> </p></div>
-                    <label class="visually-hidden" for="community">Enter your communities name:</label>
-                    <input class="input" type="text" placeholder="Community name" name="community" id="community">
+                    
+                    <label for="name">Enter your full name</label>
+                    <input class="input" type="text" placeholder="Full name" name="name" id="name" data-name="Name">
                     <div class="validation-feedback"><p class="validation-feedback-error"> </p></div>
-                    <label class="visually-hidden" for="name">Enter your full name:</label>
-                    <input class="input" type="text" placeholder="Full name" name="name" id="name">
+                    
+                    <label for="number">Enter your phone number</label>
+                    <input class="input" type="text" placeholder="(555)-555-5555" name="number" id="number" data-name="Phone number">
                     <div class="validation-feedback"><p class="validation-feedback-error"> </p></div>
-                    <label class="visually-hidden" for="number">Enter your phone number:</label>
-                    <input class="input" type="text" placeholder="Phone number" name="number" id="number">
+                    
+                    <label for="email">Enter your email address</label>
+                    <input class="input" type="text" placeholder="user@website.com" name="email" id="email" data-name="Email address">
                     <div class="validation-feedback"><p class="validation-feedback-error"> </p></div>
-                    <label class="visually-hidden" for="email">Enter your email address:</label>
-                    <input class="input" type="text" placeholder="Email address" name="email" id="email">
+
                     <button id="form-submit" type="sumbit">Sign up</button>
                 </form>
             </div>
